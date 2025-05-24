@@ -1,0 +1,48 @@
+/* cart.css - responsive */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fff8f0;
+  padding: 10px;
+}
+#cartItems p {
+  background: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+h2 {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  form, #productList div, #cartItems p {
+    font-size: 14px;
+  }
+}.navbar {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }

@@ -1,0 +1,23 @@
+<!-- 4. thankyou.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You</title>
+</head>
+<body>
+<nav class="navbar">
+  <a href="http://127.0.0.1:5500/home/home.html">Home</a>
+  <a href="http://127.0.0.1:5500/products/product.html">Products</a>
+  <a href="http://127.0.0.1:5500/cart/cart.html">Cart</a>
+  <a href="http://127.0.0.1:5500/orders/order.html">Orders</a>
+  <a href="http://127.0.0.1:5500/auth/auth.html" id="authLink">Login</a>
+  </nav>
+  <h1>Thank You for Your Order!</h1>
+  <p id="orderSummary"></p>
+  <script>
+    const order = JSON.parse(localStorage.getItem("latestOrder"));
+    document.getElementById("orderSummary").innerText =
+      `Order ID: ${order.id}\nTotal: $${order.total}`;
+  </script>
+</body>
+</html>
