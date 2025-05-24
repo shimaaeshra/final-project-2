@@ -1,52 +1,75 @@
-﻿# final-project-2
-This project is a simple e-commerce platform developed using HTML, CSS, and JavaScript. It covers key functionalities such as user authentication, product browsing, cart management, order processing, and a thank-you confirmation page.
+﻿# 🛍️ E-Commerce Front-End Project
 
-Table of Contents
-Project Overview
+This is a fully functional front-end e-commerce platform built using **vanilla HTML, CSS, and JavaScript** as part of a graduation project.
 
-Features
+---
 
-Folder Structure
+## 📦 Features
 
-Technologies Used
+- ✅ User Registration & Login (with admin role support)
+- 🛒 Product Catalog with live data (FakeStore API)
+- 🛍️ Add to Cart + Checkout Flow
+- 📑 Order Summary + Thank You Page
+- 🔐 Admin Dashboard (manage products + view orders)
+- 📁 LocalStorage-based data (users, products, cart, orders)
+- 🌐 Responsive layout and modular design
 
-How to Run
+---
 
-Future Enhancements
+## 📁 Project Structure
 
-Author
+```
+final-project/
+├── auth/         → Login & Register
+├── cart/         → Cart & Checkout
+├── orders/       → Order History
+├── products/     → Product Catalog
+├── admin/        → Admin Dashboard
+├── thankyou/     → Post-Checkout Summary
+├── home/         → Landing Page
+├── storage/      → localStorage utils
+├── style.css     → Global CSS styling
+└── README.md
+```
 
-Project Overview
-This project aims to demonstrate a basic e-commerce website structure with core functionalities including user login/signup, product display, cart operations, order management, and a simple thank-you confirmation after purchase.
+---
 
-Features
-User Authentication (Login / Signup)
+## 🚀 Live Demo
 
-Browse Products
+🔗 [View the live site on GitHub Pages](https://github.com/shimaaeshra/final-project-2)  
 
-Add/Remove Products from Cart
 
-Place Orders
+---
 
-Order History
+## 🛠️ How to Use
 
-Confirmation Page after successful purchase
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/final-project-2.git
+   ```
+2. Open `home/home.html` in a browser.
+3. Test flows like sign up, login, add to cart, checkout, etc.
 
-Folder Structure
-bash
-Copy
-Edit
-/auth       - User authentication logic and pages  
-/cart       - Shopping cart management  
-/home       - Homepage or landing page  
-/orders     - Order processing and history  
-/products   - Product catalog and details  
-/storage    - Data storage handling (localStorage or sessionStorage)  
-/thankyou   - Post-purchase confirmation page  
-Technologies Used
-HTML
+---
 
-CSS
+## 📌 Tech Stack
 
-JavaScript
+- HTML5
+- CSS3 (custom + reusable global styling)
+- JavaScript (ES6+)
+- FakeStoreAPI (for live product data)
+- LocalStorage
 
+---
+
+## 👨‍💻 Author
+
+- Name: **[shimaa eshra]**
+- Bootcamp: **NCW Front-End**
+-
+
+---
+
+## 📜 License
+
+MIT License – feel free to use or adapt for your own learning!
