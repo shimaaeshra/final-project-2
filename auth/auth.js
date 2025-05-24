@@ -1,4 +1,10 @@
 // auth.js
+//veryfication tool
+function isValidEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+//registration
 document.getElementById("registerForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const user = {
@@ -12,7 +18,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
   saveToStorage("users", users);
   alert("User registered successfully!");
 });
-
+//log in
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const email = loginEmail.value;
@@ -22,7 +28,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   if (user) {
     saveToStorage("loggedInUser", user);
     alert("Login successful!");
-    window.location.href = "D:/Rahma/final project 2/products/product.html";
+    window.location.href = "D:/final project 2/products/product.html";
   } else {
     alert("Invalid credentials");
   }
@@ -32,7 +38,7 @@ const user = JSON.parse(localStorage.getItem("loggedInUser"));
     document.getElementById("authLink").innerText = "Logout";
     document.getElementById("authLink").addEventListener("click", () => {
       localStorage.removeItem("loggedInUser");
-      window.location.href = "D:/Rahma/final project 2/auth/auth.html";
+      window.location.href = "D:/final project 2/auth/auth.html";
     });
   }
 

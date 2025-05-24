@@ -1,23 +1,39 @@
 <!-- 4. thankyou.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Thank You</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class="navbar">
-  <a href="http://127.0.0.1:5500/home/home.html">Home</a>
-  <a href="http://127.0.0.1:5500/products/product.html">Products</a>
-  <a href="http://127.0.0.1:5500/cart/cart.html">Cart</a>
-  <a href="http://127.0.0.1:5500/orders/order.html">Orders</a>
-  <a href="http://127.0.0.1:5500/auth/auth.html" id="authLink">Login</a>
+
+  <nav class="navbar">
+    <a href="../home/home.html">Home</a>
+    <a href="../products/product.html">Products</a>
+    <a href="../cart/cart.html">Cart</a>
+    <a href="../orders/order.html">Orders</a>
+    <a href="../auth/auth.html" id="authLink">Login</a>
   </nav>
+
   <h1>Thank You for Your Order!</h1>
-  <p id="orderSummary"></p>
+  <div id="orderSummary"></div>
+
   <script>
     const order = JSON.parse(localStorage.getItem("latestOrder"));
-    document.getElementById("orderSummary").innerText =
-      `Order ID: ${order.id}\nTotal: $${order.total}`;
+
+    const summaryDiv = document.getElementById("orderSummary");
+
+    if (order) {
+      summaryDiv.innerHTML = `
+        <p><strong>Order ID:</strong> ${order.id}</p>
+        <p><strong>Total:</strong> $${order.total.toFixed(2)}</p>
+        <p>We appreciate your business! 🙌</p>
+      `;
+    } else {
+      summaryDiv.innerHTML = "<p>No order found. Please return to the shop.</p>";
+    }
   </script>
+
 </body>
 </html>

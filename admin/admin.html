@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../home/home.html">Home</a>
+    <a href="../products/product.html">Products</a>
+    <a href="../orders/order.html">Orders</a>
+    <a href="../auth/auth.html" id="authLink">Login</a>
+  </nav>
+
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <section id="metrics">
+      <h2>Metrics</h2>
+      <p>Total Products: <span id="productCount"></span></p>
+      <p>Total Orders: <span id="orderCount"></span></p>
+      <p>Total Sales: $<span id="totalSales"></span></p>
+      <p>Active Users: <span id="activeUsers"></span></p>
+    </section>
+
+    <section id="productManagement">
+      <h2>Product Management</h2>
+      <div id="productTable"></div>
+    </section>
+
+    <section id="orderManagement">
+      <h2>Order Management</h2>
+      <div id="orderTable"></div>
+    </section>
+  </div>
+
+  <script src="../storage/storage.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

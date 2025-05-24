@@ -2,20 +2,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="../style.css">
   <title>Products</title>
 </head>
 <body>
-  <nav class="navbar">
-  <a href="http://127.0.0.1:5500/home/home.html">Home</a>
-  <a href="http://127.0.0.1:5500/products/product.html">Products</a>
-  <a href="http://127.0.0.1:5500/cart/cart.html">Cart</a>
-  <a href="http://127.0.0.1:5500/orders/order.html">Orders</a>
-  <a href="http://127.0.0.1:5500/auth/auth.html" id="authLink">Login</a>
+ <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="../products/product.html">Products</a>
+    <a href="../cart/cart.html">Cart</a>
+    <a href="../orders/order.html">Orders</a>
+    <a href="../auth/auth.html" id="authLink">Login</a>
   </nav>
   <h1>Product Catalog</h1>
  <div id="allProducts"  class="products-container">
-
+<select id="categoryFilter">
+  <option value="all">all category</option>
+</select>
 
   <script src="product.js"></script>
 </body>

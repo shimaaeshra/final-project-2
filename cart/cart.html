@@ -2,21 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="cart.css">
+  <meta charset="UTF-8" />
+<link rel="stylesheet" href="../style.css">
   <title>Your Cart</title>
 </head>
 <body>
-    <nav class="navbar">
-  <a href="http://127.0.0.1:5500/home/home.html">Home</a>
-  <a href="http://127.0.0.1:5500/products/product.html">Products</a>
-  <a href="http://127.0.0.1:5500/cart/cart.html">Cart</a>
-  <a href="http://127.0.0.1:5500/orders/order.html">Orders</a>
-  <a href="http://127.0.0.1:5500/auth/auth.html" id="authLink">Login</a>
+  <nav class="navbar">
+    <a href="../home/home.html">Home</a>
+    <a href="../products/product.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="../orders/order.html">Orders</a>
+    <a href="../auth/auth.html" id="authLink">Login</a>
   </nav>
-  <h1>Your Shopping Cart</h1>
+
+  <h1>Shopping Cart</h1>
   <div id="cartItems"></div>
-  <h2 id="totalPrice">Total: $0</h2>
-  <button onclick="checkout()">Checkout</button>
-  <script src="D:\Rahma\final project 2/cart/cart.js"></script>
+  <h3 id="totalPrice">Total: $0</h3>
+
+  <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+
+  <script src="../storage/storage.js"></script>
+  <script src="cart.js"></script>
 </body>
 </html>
