@@ -21,21 +21,19 @@ async function getAllProducts() {
 
 // display
 function display(products) {
-let temp = ""
-products.forEach(element => {
-    temp +=`
-    <div id="${element.id}" class="product-card
-    "onclick="getDetails(${element.id})"
-
-    <img src="${element.image}" alt="${element.title}" >
-    <h2> ${element.title} </h2>
-    <span>$${element.price}</span>
-    <i class="fa-solid fa-cart-shopping" onclick="event.stopPropagation(); addToCart(${element.id})"></i>
-
-    </div>
-  `;
-});
-document.getElementById('allProducts').innerHTML = temp
+  let temp = "";
+  products.forEach(element => {
+    temp += `
+      <div id="${element.id}" class="product-card">
+        <img src="${element.image}" alt="${element.title}" onerror="this.src='https://via.placeholder.com/100'">
+        <h2>${element.title}</h2>
+        <span>$${element.price}</span>
+        <button onclick="getDetails(${element.id})">View Details</button>
+        <button onclick="addToCart(${element.id})">Add to Cart</button>
+      </div>
+    `;
+  });
+  document.getElementById('allProducts').innerHTML = temp;
 }
 
 // filterByCategory

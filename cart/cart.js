@@ -28,5 +28,5 @@ function checkout() {
   saveToStorage("orders", orders);
   saveToStorage("latestOrder", order);
   localStorage.removeItem("cart");
-  window.location.href =".. /hankyou/thankyou.html";
+  window.location.href ="../thankyou/thankyou.html";
 }
