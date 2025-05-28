@@ -18,7 +18,6 @@ async function getAllProducts() {
     }
 }
 
-
 // display
 function display(products) {
   let temp = "";
