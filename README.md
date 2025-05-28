@@ -36,7 +36,7 @@ final-project/
 
 ## 🚀 Live Demo
 
-🔗 [View the live site on GitHub Pages](https://github.com/shimaaeshra/final-project-2)  
+🔗 [View the live site on GitHub Pages](https://shimaaeshra.github.io/final-project-2/home/index.html)  
 
 
 ---
